@@ -1,10 +1,36 @@
+ /* Hide scrollbar for Chrome, Safari and Opera */
+ .fraktal::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE and Edge */
+  .fraktal {
+    -ms-overflow-style: none;
+  } 
 
-.card-img-top:hover{
+  #p{
+    text-indent: 0;
+    color: goldenrod;
+    text-align: justify;
+    text-indent: 30px;
+  }
 
-    zoom: 5;
-
-}
-
-#fraktal{
-
-}
+ /* width */
+ ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: yellow;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: green;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: red;
+  } 

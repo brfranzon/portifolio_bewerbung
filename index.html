@@ -19,6 +19,7 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
         </script>
     <script src="https://kit.fontawesome.com/f0e17cbf2f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
 
 
     <style>
@@ -60,11 +61,12 @@
                 </li>
             </ul>
         </div>
+
     </nav>
 
 
     <!--* FOTO *-->
-    <section class="text-center corPrimaria mt-5">
+    <section class="text-center  mt-5">
         <div class="container">
             <img src="https://i.ibb.co/gFfDZtK/jhonatan-copy.jpg" class="foto-perfil" alt="Responsive image">
 
@@ -73,9 +75,9 @@
             <p class="lead" style="color:rgb(150, 142, 143) !important;">Software Developer - Content Creator - Blogger
             </p>
 
-            <p>
-                <a href="#contato" class="btn btn-dark my-2">Contato</a>
-            </p>
+            <button class="btn btn-info">
+                <a href="#contato" class="text-white"> Contato </a>
+            </button>
 
             <!--     <a href="#"><i style="color:white" class="fab fa-github"></i></a> -->
             <!-- <a href="#"><i style="color:white" class="fab fa-linkedin"></i></a> -->
@@ -86,28 +88,28 @@
 
 
     <!-- PROJECTS -->
-    <div class="album py-5 bg-dark " id="projetos">
-        <div class="container bg-danger">
+    <div class="album py-5" id="projetos">
+        <div class="container">
 
-            <h2 class="text-center text-warning">Projekte</h2>
+            <h1 class="text-center text-warning mb-5">Projekte</h1>
 
             <!--  <div class="row"> -->
             <!-- Fraktal-->
             <div class="col-md-16 mb-5">
 
+                <h3 class="text-success">Fraktal</h3>
 
                 <div class="card mb-4 box-shadow ">
+                    <object class="fraktal" overflow-y="hidden" , height="800" type="text/html"
+                        data="http://franzon-fraktal.rf.gd">
 
-                    <object id="fraktal"  
-                    overflow-y = "hidden", height="800" type="text/html" data="http://franzon-fraktal.rf.gd">
-                     
                     </object>
 
-                   
+
                     <div class="card-body">
-                        <p class="card-text">Esse é um projeto que eu desenvolvi usando as tecnologias A, B, C e D.
+                        <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam!
                         </p>
-                        <ul>
+                        <ul class="d-flex justify-content-around mb-5">
                             <li>Javascript</li>
                             <li>Rest API</li>
                             <li>CSS</li>
@@ -115,14 +117,15 @@
                         </ul>
 
                         <div>
-                            <div class="btn-group justify-content-between">
+                            <div class="d-flex justify-content-end">
                                 <a href="http://franzon.rf.gd/" target="_blank"> <button type="button"
                                         class="btn btn-sm btn-outline-success">Ver Projeto</button> </a>
                                 <button type="button" class="btn btn-sm btn-outline-primary">Ver Código</button>
-                            </div>
 
-                            <small class="text-muted">Fraktal</small>
+                            </div>
+                           
                         </div>
+
                     </div>
 
                 </div>
@@ -131,41 +134,50 @@
 
 
             <!-- Corona-->
-            <div class="col-md-12">
-                <div class="card mb-4 box-shadow">
+        <div class="col-md-16 mb-5">
 
-                    <object type="text/html" data="http://franzon-corona-app.rf.gd">
-                    </object>
+            <h3 class="text-success">Corona App</h3>
 
-                    <div class="card-body">
-                        <p class="card-text">Esse é um projeto que eu desenvolvi usando as tecnologias A, B, C e D.
-                        </p>
-                        <ul>
-                            <li>Javascript</li>
-                            <li>Rest API</li>
-                            <li>CSS</li>
-                            <li>Mapabox</li>
-                        </ul>
+            <div class="card mb-4 box-shadow ">
+                <object class="fraktal" overflow-y="hidden" , height="800" type="text/html"
+                    data="http://franzon-corona-app.rf.gd">
 
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <a href="http://franzon.rf.gd/" target="_blank"> <button type="button"
-                                        class="btn btn-sm btn-outline-success">Ver Projeto</button> </a>
-                                <button type="button" class="btn btn-sm btn-outline-primary">Ver Código</button>
-                            </div>
+                </object>
 
-                            <small class="text-muted">9 mins</small>
+
+                <div class="card-body">
+                    <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam!
+                    </p>
+                    <ul class="d-flex justify-content-around mb-5">
+                        <li>Javascript</li>
+                        <li>Rest API</li>
+                        <li>CSS</li>
+                        <li>Mapabox</li>
+                    </ul>
+
+                    <div>
+                        <div class="d-flex justify-content-end">
+                            <a href="http://franzon-corona-app.rf.gd/" target="_blank"> <button type="button"
+                                    class="btn btn-sm btn-outline-success">Ver Projeto</button> </a>
+                            <button type="button" class="btn btn-sm btn-outline-primary">Ver Código</button>
+
                         </div>
+                       
                     </div>
+
                 </div>
+
             </div>
+
+        </div>
+
 
             <!-- REST API-->
             <div class="col-md-12">
                 <div class="card mb-4 box-shadow">
 
 
-                    <object type="text/html" data="https://rest-api-mural.herokuapp.com">
+                    <object object class="fraktal" overflow-y="hidden" , height="800" type="text/html" data="https://rest-api-mural.herokuapp.com">
                     </object>
 
                     <div class="card-body">
