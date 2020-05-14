@@ -1,47 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bruno Franzon</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+        </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+        </script>
+    <script src="https://kit.fontawesome.com/f0e17cbf2f.js" crossorigin="anonymous"></script>
+
+
+    <style>
+        .foto-perfil {
+            height: 100%;
+            max-width: auto;
+            border-radius: 50%;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 
 <body>
 
+    <!--* NAVBAR *-->
+    <nav class="navbar navbar-expand-md navbar-light" style="background-color: gray">
+        <a class="navbar-brand" style=color:white> Bruno Franzon</a>
 
-    <div id="header" class="mb-5">
-        <p id="p-header"> Hello, this is my first. kakakakaka. <span class="display-3">Bruno Franzon</span> </p>
-    </div>
 
-    <!-- Fractal-->
-    <button id="x" type="button" class="btn btn-success">Chance the Tree</button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon bg-danger"></span>
+        </button>
 
-    <div id="project1" class="mb-5">
-        <div id="project1-pic">
-            <canvas id="canvas">
-            </canvas>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav">
+                <li>
+                    <a href="#projetos" class="nav-link" style=color:white> Projetos</a>
+                </li>
+                <li>
+                    <a href="#sobre-mim" class="nav-link" style=color:white>Sobre mim</a>
+                </li>
+                <li>
+                    <a href="#contato" class="nav-link" style=color:white>Contato</a>
+                </li>
+            </ul>
         </div>
+    </nav>
 
-        <div id="project1-text">
-            <div class="col-md-8 position">
-                <div class="card mb-4 box-shadow">
+
+    <!--* FOTO *-->
+    <section class="text-center corPrimaria mt-5">
+        <div class="container">
+            <img src="https://i.ibb.co/gFfDZtK/jhonatan-copy.jpg" class="foto-perfil" alt="Responsive image">
+
+            <h1 class="jumbotron-heading" style="color:rebeccapurple; text-transform: uppercase;">Bruno Franzon</h1>
+
+            <p class="lead" style="color:rgb(150, 142, 143) !important;">Software Developer - Content Creator - Blogger
+            </p>
+
+            <p>
+                <a href="#contato" class="btn btn-dark my-2">Contato</a>
+            </p>
+
+            <!--     <a href="#"><i style="color:white" class="fab fa-github"></i></a> -->
+            <!-- <a href="#"><i style="color:white" class="fab fa-linkedin"></i></a> -->
+            <!--  <a href="#"><i style="color:white" class="fab fa-instagram"></i></a> -->
+
+        </div>
+    </section>
+
+
+    <!-- PROJECTS -->
+    <div class="album py-5 bg-dark " id="projetos">
+        <div class="container bg-danger">
+
+            <h2 class="text-center text-warning">Projekte</h2>
+
+            <!--  <div class="row"> -->
+            <!-- Fraktal-->
+            <div class="col-md-16 mb-5">
+
+
+                <div class="card mb-4 box-shadow ">
+
+                    <object id="fraktal"  
+                    overflow-y = "hidden", height="800" type="text/html" data="http://franzon-fraktal.rf.gd">
+                     
+                    </object>
+
+                   
                     <div class="card-body">
-                        <p class="card-text">Esse é um que eu desenvolvi usando as tecnologias A, B, C e D.
+                        <p class="card-text">Esse é um projeto que eu desenvolvi usando as tecnologias A, B, C e D.
                         </p>
                         <ul>
                             <li>Javascript</li>
@@ -50,42 +114,29 @@
                             <li>Mapabox</li>
                         </ul>
 
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
+                        <div>
+                            <div class="btn-group justify-content-between">
                                 <a href="http://franzon.rf.gd/" target="_blank"> <button type="button"
                                         class="btn btn-sm btn-outline-success">Ver Projeto</button> </a>
                                 <button type="button" class="btn btn-sm btn-outline-primary">Ver Código</button>
                             </div>
 
+                            <small class="text-muted">Fraktal</small>
                         </div>
                     </div>
+
                 </div>
+
             </div>
 
-        </div>
 
-    </div>
-
-
-    <div>
-        <ul>
-            <li> <a> <i class="fa fa-plus" aria-hidden="true"></i> </a></li>
-        </ul>
-    </div>
-
-
-
-    <!--Backend-->
-    <div id="project2" class="mb-5">
-
-        <div id="project2-pic">
-            <object type="text/html" data="https://rest-api-mural.herokuapp.com/">
-            </object>
-        </div>
-
-        <div id="project2-text">
-            <div class="col-md-8 position">
+            <!-- Corona-->
+            <div class="col-md-12">
                 <div class="card mb-4 box-shadow">
+
+                    <object type="text/html" data="http://franzon-corona-app.rf.gd">
+                    </object>
+
                     <div class="card-body">
                         <p class="card-text">Esse é um projeto que eu desenvolvi usando as tecnologias A, B, C e D.
                         </p>
@@ -103,69 +154,75 @@
                                 <button type="button" class="btn btn-sm btn-outline-primary">Ver Código</button>
                             </div>
 
+                            <small class="text-muted">9 mins</small>
                         </div>
                     </div>
                 </div>
             </div>
 
-        </div>
-
-    </div>
-
-    <div>
-        <ul>
-            <li> <a> <i class="fa fa-plus" aria-hidden="true"></i> </a></li>
-        </ul>
-    </div>
-
-    <!--Corona APP-->
-    <div id="project3" class="mb-5">
-
-        <div id="project3-pic">
-            <object type="text/html" data="http://franzon.rf.gd/">
-            </object>
-        </div>
-
-        <div id="project3-text">
-            <div class="col-md-8 position">
+            <!-- REST API-->
+            <div class="col-md-12">
                 <div class="card mb-4 box-shadow">
+
+
+                    <object type="text/html" data="https://rest-api-mural.herokuapp.com">
+                    </object>
+
                     <div class="card-body">
                         <p class="card-text">Esse é um projeto que eu desenvolvi usando as tecnologias A, B, C e D.
                         </p>
                         <ul>
                             <li>Javascript</li>
-                            <li>Rest API</li>
+                            <li>Full Rest API</li>
+                            <li>MongoDB</li>
                             <li>CSS</li>
-                            <li>Mapabox</li>
                         </ul>
-
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <a href="http://franzon.rf.gd/" target="_blank"> <button type="button"
-                                        class="btn btn-sm btn-outline-success">Ver Projeto</button> </a>
+                                <a href="https://rest-api-mural.herokuapp.com/" target="_blank"> <button type="button"
+                                        class="btn btn-sm btn-outline-success">Ver Projeto</button>
+                                </a>
                                 <button type="button" class="btn btn-sm btn-outline-primary">Ver Código</button>
                             </div>
-
+                            <small class="text-muted">9 mins</small>
                         </div>
                     </div>
                 </div>
             </div>
 
-        </div>
+            <!-- GLASS-->
+            <!--Visualization-->
 
+
+            <!--</div>-->
+        </div>
     </div>
 
+    <section class="jumbotron text-center corPrimaria" id="sobre-mim">
+        <div class="container">
+            <h2 class="jumbotron-heading titulosBrancos">Sobre mim</h2>
+            <p class="lead paragrafoBrancos">Olá meu nome é John e estou no mercado de games a mais de 4 anos, tendo
+                desenvolvido projetos com empresas como Sony, Unreal Engine, Cry Engine entre diversas outras. Sou
+                apaixado por games games e desenvolvimento, e gosto de compartilhar meu conhecimento sempre que possível
+                com meus colegas de trabalho</p>
+        </div>
+    </section>
 
 
+    <section Id="contato" class="corPrimaria">
+        <div class="corPrimaria">
+            <div class="container-fluid">
+                <h3 style="padding-top:90px;" class="text-center titulosBrancos">Disponível para oportunidades</h3>
+                <h4 style="padding-bottom:90px;margin-bottom: 0px;color:white;" class="text-center"><a
+                        href="mailto:jdsjhonatan@hotmail.com">seumail@hotmail.com👈</a></h4>
+            </div>
+        </div>
+    </section>
 
-
-
-
-
-
-
-
-
+    <footer class="text-center" style="background-color:#2c3e50;padding:0px; margin:0px">
+        <p style="margin:0px;padding-top:15px;padding-bottom:15px;color:white !important">Copyright 2020 DevAprender®
+        </p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
