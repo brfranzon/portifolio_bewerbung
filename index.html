@@ -32,20 +32,43 @@
         html {
             scroll-behavior: smooth;
         }
+
+        .ml {
+            margin-left: 200px;
+        }
+
+
+       .navbar-toggler,
+        .navbar-toggler:focus,
+        .navbar-toggler:active,
+        .navbar-toggler-icon:focus {
+            outline: none;
+            border: none;
+            box-shadow: none;
+        }
     </style>
 </head>
 
 <body>
 
+
+
+    <header class="bannersticky-top ignore-header  bg-white sticky-top" style="height: 200px; z-index:1;">
+    </header>
+
+
     <!--* NAVBAR *-->
-    <nav class="navbar navbar-expand-md navbar-light" style="background-color: gray">
-        <a class="navbar-brand" style=color:white> Bruno Franzon</a>
+    <nav class="navbar navbar-expand-md navbar-light d-flex justify-content-around" style="height: 200px; background-color: gray;">
+
+        <a class="navbar-brand" style=color:black> Bruno Franzon</a>
 
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu"
             aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon bg-danger"></span>
+            <span class="navbar-toggler-icon navbar-toggler-focus"></span>
         </button>
+
+
 
 
         <div class="collapse navbar-collapse" id="menu">
@@ -82,122 +105,143 @@
             <!--     <a href="#"><i style="color:white" class="fab fa-github"></i></a> -->
             <!-- <a href="#"><i style="color:white" class="fab fa-linkedin"></i></a> -->
             <!--  <a href="#"><i style="color:white" class="fab fa-instagram"></i></a> -->
-
         </div>
     </section>
 
 
-    <!-- PROJECTS -->
-    <div class="album py-5" id="projetos">
-        <div class="container">
 
-            <h1 class="text-center text-warning mb-5">Projekte</h1>
+
+    <div id="jogador">
+    </div>
+
+    <!-- PROJECTS -->
+    <!--  <div class="py-5 bg-info" id="projetos"> -->
+
+    <div class="row">
+        <div class="col-sm  mb-5 mt-5 position-absolute"id="projetos">
+
+            <h1 class="text-center text-warning mb-5"> Technische Projekte</h1>
+
 
             <!--  <div class="row"> -->
             <!-- Fraktal-->
-            <div class="col-md-16 mb-5">
+            <div class="mx-auto col-md-8 mb-5">
 
                 <h3 class="text-success">Fraktal</h3>
 
-                <div class="card mb-4 box-shadow ">
-                    <object class="fraktal" overflow-y="hidden" , height="800" type="text/html"
+                <div class="card mb-4 box-shadow">
+
+                    <object class="fraktal" overflow-y="hidden" , height="650" , type="text/html"
                         data="http://franzon-fraktal.rf.gd">
 
                     </object>
 
 
                     <div class="card-body">
-                        <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam!
+                        <p class="card-text"> Javascript Anwendung zur Visualisierung eines
+                            Fraktalbaums. Technische verwendete Tolls:
                         </p>
                         <ul class="d-flex justify-content-around mb-5">
                             <li>Javascript</li>
-                            <li>Rest API</li>
                             <li>CSS</li>
-                            <li>Mapabox</li>
+                            <li>HTML</li>
                         </ul>
 
                         <div>
                             <div class="d-flex justify-content-end">
-                                <a href="http://franzon.rf.gd/" target="_blank"> <button type="button"
+                                <a href="http://franzon-fraktal.rf.gd/?i=1" target="_blank"> <button type="button"
                                         class="btn btn-sm btn-outline-success">Ver Projeto</button> </a>
                                 <button type="button" class="btn btn-sm btn-outline-primary">Ver Código</button>
 
                             </div>
-                           
+
                         </div>
 
                     </div>
 
                 </div>
+
+
 
             </div>
 
 
             <!-- Corona-->
-        <div class="col-md-16 mb-5">
+            <div class="mx-auto col-md-8 mb-5">
 
-            <h3 class="text-success">Corona App</h3>
+                <h3 class="text-success">Corona Virus App</h3>
 
-            <div class="card mb-4 box-shadow ">
-                <object class="fraktal" overflow-y="hidden" , height="800" type="text/html"
-                    data="http://franzon-corona-app.rf.gd">
+                <div class="card mb-4 box-shadow ">
+                    <object class="fraktal" overflow-y="hidden" , height="650" type="text/html"
+                        data="http://franzon-corona-app.rf.gd">
 
-                </object>
+                    </object>
 
 
-                <div class="card-body">
-                    <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam!
-                    </p>
-                    <ul class="d-flex justify-content-around mb-5">
-                        <li>Javascript</li>
-                        <li>Rest API</li>
-                        <li>CSS</li>
-                        <li>Mapabox</li>
-                    </ul>
+                    <div class="card-body">
+                        <p class="card-text">Anwendung für die Visualisierung von Koronadaten. Technische verwendete
+                            Tolls:
 
-                    <div>
-                        <div class="d-flex justify-content-end">
-                            <a href="http://franzon-corona-app.rf.gd/" target="_blank"> <button type="button"
-                                    class="btn btn-sm btn-outline-success">Ver Projeto</button> </a>
-                            <button type="button" class="btn btn-sm btn-outline-primary">Ver Código</button>
+                        </p>
+                        <ul class="d-flex justify-content-around mb-5">
+                            <li>Javascript</li>
+                            <li>Rest API's</li>
+                            <li>CSS</li>
+                            <li>Mapabox GL JS</li>
+                            <li>Chart.js</li>
+                        </ul>
+
+                        <div>
+                            <div class="d-flex justify-content-end">
+                                <a href="http://franzon-corona-app.rf.gd/" target="_blank"> <button type="button"
+                                        class="btn btn-sm btn-outline-success">Ver Projeto</button> </a>
+                                <button type="button" class="btn btn-sm btn-outline-primary">Ver Código</button>
+
+                            </div>
 
                         </div>
-                       
+
                     </div>
 
                 </div>
 
             </div>
 
-        </div>
-
 
             <!-- REST API-->
-            <div class="col-md-12">
+            <div class="mx-auto col-md-8 mb-5">
+
+                <h3 class="text-success">Restfull API</h3>
                 <div class="card mb-4 box-shadow">
 
 
-                    <object object class="fraktal" overflow-y="hidden" , height="800" type="text/html" data="https://rest-api-mural.herokuapp.com">
+                    <object object class="fraktal" overflow-y="hidden" , height="650" type="text/html"
+                        data="https://rest-api-mural.herokuapp.com">
                     </object>
 
                     <div class="card-body">
-                        <p class="card-text">Esse é um projeto que eu desenvolvi usando as tecnologias A, B, C e D.
+                        <p class="card-text"> Post/Mural Anwendung erstellt in Kombination mit
                         </p>
-                        <ul>
-                            <li>Javascript</li>
-                            <li>Full Rest API</li>
+                        <ul class="d-flex justify-content-around mb-5">
+                            <li>Restfull API</li>
                             <li>MongoDB</li>
-                            <li>CSS</li>
+                            <li>Express</li>
+                            <li>Node.js</li>
+                            <li>Bootstrap</li>
                         </ul>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
+
+
+                        <div>
+                            <div class="d-flex justify-content-end">
                                 <a href="https://rest-api-mural.herokuapp.com/" target="_blank"> <button type="button"
-                                        class="btn btn-sm btn-outline-success">Ver Projeto</button>
-                                </a>
+                                        class="btn btn-sm btn-outline-success">Ver Projeto</button> </a>
                                 <button type="button" class="btn btn-sm btn-outline-primary">Ver Código</button>
+
                             </div>
-                            <small class="text-muted">9 mins</small>
+
                         </div>
+
+
                     </div>
                 </div>
             </div>
@@ -205,36 +249,49 @@
             <!-- GLASS-->
             <!--Visualization-->
 
-
             <!--</div>-->
+            <section class="text-center" id="sobre-mim">
+                <div class="container">
+                    <h2>Sobre mim</h2>
+                    <p class="lead paragrafoBrancos">Olá meu nome é John e estou no mercado de games a mais de 4 anos,
+                        tendo
+                        desenvolvido projetos com empresas como Sony, Unreal Engine, Cry Engine entre diversas outras.
+                        Sou
+                        apaixado por games games e desenvolvimento, e gosto de compartilhar meu conhecimento sempre que
+                        possível
+                        com meus colegas de trabalho</p>
+                </div>
+                <a href="./lebenslauf_franzon.pdf" target="_blank"> Lebenslauf</a>
+            </section>
+
+
+            <section Id="contato">
+                <div>
+                    <div class="container-fluid">
+                        <h3 style="padding-top:90px;" class="text-center titulosBrancos">Disponível para oportunidades
+                        </h3>
+                        <h4 style="padding-bottom:90px;margin-bottom: 0px;color:white;" class="text-center"><a
+                                href="mailto:jdsjhonatan@hotmail.com">seumail@hotmail.com👈</a></h4>
+
+
+                    </div>
+                </div>
+            </section>
+
+            <footer class="text-center" style="background-color:#2c3e50;padding:0px; margin:0px">
+                <p style="margin:0px;padding-top:15px;padding-bottom:15px;color:white !important">Copyright 2020
+                    DevAprender®
+                </p>
+            </footer>
         </div>
+
     </div>
 
-    <section class="jumbotron text-center corPrimaria" id="sobre-mim">
-        <div class="container">
-            <h2 class="jumbotron-heading titulosBrancos">Sobre mim</h2>
-            <p class="lead paragrafoBrancos">Olá meu nome é John e estou no mercado de games a mais de 4 anos, tendo
-                desenvolvido projetos com empresas como Sony, Unreal Engine, Cry Engine entre diversas outras. Sou
-                apaixado por games games e desenvolvimento, e gosto de compartilhar meu conhecimento sempre que possível
-                com meus colegas de trabalho</p>
-        </div>
-    </section>
 
 
-    <section Id="contato" class="corPrimaria">
-        <div class="corPrimaria">
-            <div class="container-fluid">
-                <h3 style="padding-top:90px;" class="text-center titulosBrancos">Disponível para oportunidades</h3>
-                <h4 style="padding-bottom:90px;margin-bottom: 0px;color:white;" class="text-center"><a
-                        href="mailto:jdsjhonatan@hotmail.com">seumail@hotmail.com👈</a></h4>
-            </div>
-        </div>
-    </section>
 
-    <footer class="text-center" style="background-color:#2c3e50;padding:0px; margin:0px">
-        <p style="margin:0px;padding-top:15px;padding-bottom:15px;color:white !important">Copyright 2020 DevAprender®
-        </p>
-    </footer>
+
+
 
     <script src="script.js"></script>
 </body>
