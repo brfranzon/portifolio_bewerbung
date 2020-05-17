@@ -19,14 +19,24 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
         </script>
     <script src="https://kit.fontawesome.com/f0e17cbf2f.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Julius+Sans+One&family=Titillium+Web&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
 
     <style>
         .foto-perfil {
-            height: 100%;
+            height: 250px;
             max-width: auto;
             border-radius: 50%;
+        }
+
+        .foto-perfil:hover {
+            position: relative;
+            transform: rotate(-360deg);
+            transition: 2s;
         }
 
         html {
@@ -38,13 +48,54 @@
         }
 
 
-       .navbar-toggler,
+        .navbar-toggler,
         .navbar-toggler:focus,
         .navbar-toggler:active,
         .navbar-toggler-icon:focus {
             outline: none;
             border: none;
             box-shadow: none;
+        }
+
+        #nav {
+            height: 200px;
+            background-image:
+                repeating-linear-gradient(45deg,
+                    rgb(202, 202, 202),
+                    rgb(202, 202, 202) 10px,
+                    rgb(233, 2, 233) 30px,
+                    rgb(233, 2, 233) 30px
+                    /* determines size */
+                );
+        }
+
+        .columns-bg {
+            border-radius: 25px;
+            width: 90%;
+            background-image:
+                repeating-radial-gradient(circle at 0 0,
+                    rgb(233, 233, 233),
+                    rgb(224, 224, 224) 1000px);
+        }
+
+
+        .title-color {
+            color: rgb(233, 2, 233)
+        }
+
+        .border-2 {
+            border-width: 2px !important;
+        }
+
+        .border-3 {
+            border-width: 3px !important;
+        }
+
+        #name {
+            font-family: 'Cinzel', serif;
+            font-family: 'Julius Sans One', sans-serif;
+            font-weight: 900;
+            font-size: 32pt;
         }
     </style>
 </head>
@@ -58,9 +109,9 @@
 
 
     <!--* NAVBAR *-->
-    <nav class="navbar navbar-expand-md navbar-light d-flex justify-content-around" style="height: 200px; background-color: gray;">
+    <nav id="nav" class="navbar navbar-expand-md navbar-light">
 
-        <a class="navbar-brand" style=color:black> Bruno Franzon</a>
+        <a class="navbar-brand"> <span id="name"> Bruno Franzon </span></a>
 
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu"
@@ -69,38 +120,34 @@
         </button>
 
 
-
-
         <div class="collapse navbar-collapse" id="menu">
             <ul class="navbar-nav">
-                <li>
-                    <a href="#projetos" class="nav-link" style=color:white> Projetos</a>
+                <li id="projekt">
+                    <a href="#projetos" class="nav-link text-white font-weight-bold "> Projekte</a>
                 </li>
-                <li>
-                    <a href="#sobre-mim" class="nav-link" style=color:white>Sobre mim</a>
+                <li id="uebermich">
+                    <a href="#sobre-mim" class="nav-link text-white font-weight-bold">Über mich</a>
                 </li>
-                <li>
-                    <a href="#contato" class="nav-link" style=color:white>Contato</a>
-                </li>
+                <li id="kontakt">
+                    <a href="#contato" class="nav-link text-white font-weight-bold">Kontakt</a>
+                    </li>
             </ul>
         </div>
 
     </nav>
 
 
+
+
     <!--* FOTO *-->
     <section class="text-center  mt-5">
         <div class="container">
-            <img src="https://i.ibb.co/gFfDZtK/jhonatan-copy.jpg" class="foto-perfil" alt="Responsive image">
+            <img id="pic" src="/images/eu_pic.jpg" class="foto-perfil" alt="Responsive image">
 
-            <h1 class="jumbotron-heading" style="color:rebeccapurple; text-transform: uppercase;">Bruno Franzon</h1>
+            <h1 style="color:rebeccapurple; text-transform: uppercase;">Bruno Franzon</h1>
 
-            <p class="lead" style="color:rgb(150, 142, 143) !important;">Software Developer - Content Creator - Blogger
+            <p class="lead" style="color:rgb(150, 142, 143) !important;">Software Developer - Content Creator - XXXXX
             </p>
-
-            <button class="btn btn-info">
-                <a href="#contato" class="text-white"> Contato </a>
-            </button>
 
             <!--     <a href="#"><i style="color:white" class="fab fa-github"></i></a> -->
             <!-- <a href="#"><i style="color:white" class="fab fa-linkedin"></i></a> -->
@@ -117,8 +164,8 @@
     <!-- PROJECTS -->
     <!--  <div class="py-5 bg-info" id="projetos"> -->
 
-    <div class="row">
-        <div class="col-sm  mb-5 mt-5 position-absolute"id="projetos">
+    <div class="row justify-content-center">
+        <div class="col-sm  mb-5 mt-5 position-absolute columns-bg" id="projetos">
 
             <h1 class="text-center text-warning mb-5"> Technische Projekte</h1>
 
@@ -127,12 +174,12 @@
             <!-- Fraktal-->
             <div class="mx-auto col-md-8 mb-5">
 
-                <h3 class="text-success">Fraktal</h3>
+                <h3 class="text-dark">Fraktal</h3>
 
-                <div class="card mb-4 box-shadow">
+                <div class="card mb-4 box-shadow border border-3 ">
 
-                    <object class="fraktal" overflow-y="hidden" , height="650" , type="text/html"
-                        data="http://franzon-fraktal.rf.gd">
+                    <object class="fraktal  border-3 border border-bottom-2 border-left-0 border-right-0 border-top-0 "
+                        overflow-y="hidden" , height="600" , type="text/html" data="http://franzon-fraktal.rf.gd">
 
                     </object>
 
@@ -149,9 +196,10 @@
 
                         <div>
                             <div class="d-flex justify-content-end">
-                                <a href="http://franzon-fraktal.rf.gd/?i=1" target="_blank"> <button type="button"
-                                        class="btn btn-sm btn-outline-success">Ver Projeto</button> </a>
-                                <button type="button" class="btn btn-sm btn-outline-primary">Ver Código</button>
+                                <a href="franzon-fraktal.rf.gd" target="_blank"> <button type="button" class="btn"
+                                        id="btn-projekt">Projekt</button> </a>
+                                <a href="https://github.com/brfranzon/fractalv2" target="_blank">
+                                    <button type="button" class="btn" id="btn-code">Code</button></a>
 
                             </div>
 
@@ -161,22 +209,19 @@
 
                 </div>
 
-
-
             </div>
 
 
             <!-- Corona-->
             <div class="mx-auto col-md-8 mb-5">
 
-                <h3 class="text-success">Corona Virus App</h3>
+                <h3 class="text-dark">Corona Virus App</h3>
+                <div class="card mb-4 box-shadow border border-3 ">
 
-                <div class="card mb-4 box-shadow ">
-                    <object class="fraktal" overflow-y="hidden" , height="650" type="text/html"
-                        data="http://franzon-corona-app.rf.gd">
+                    <object class="fraktal  border-3 border border-bottom-2 border-left-0 border-right-0 border-top-0 "
+                        overflow-y="hidden" , height="600" , type="text/html" data="http://franzon-corona-app.rf.gd">
 
                     </object>
-
 
                     <div class="card-body">
                         <p class="card-text">Anwendung für die Visualisierung von Koronadaten. Technische verwendete
@@ -193,9 +238,10 @@
 
                         <div>
                             <div class="d-flex justify-content-end">
-                                <a href="http://franzon-corona-app.rf.gd/" target="_blank"> <button type="button"
-                                        class="btn btn-sm btn-outline-success">Ver Projeto</button> </a>
-                                <button type="button" class="btn btn-sm btn-outline-primary">Ver Código</button>
+                                <a href="http://franzon-corona-app.gd/?i=1" target="_blank"> <button type="button"
+                                        class="btn" id="btn-projekt">Projekt</button> </a>
+                                <a href="https://github.com/brfranzon/coronaApp" target="_blank">
+                                    <button type="button" class="btn" id="btn-code">Code</button></a>
 
                             </div>
 
@@ -211,12 +257,13 @@
             <!-- REST API-->
             <div class="mx-auto col-md-8 mb-5">
 
-                <h3 class="text-success">Restfull API</h3>
-                <div class="card mb-4 box-shadow">
+                <h3 class="text-dark">Restfull API</h3>
+                <div class="card mb-4 box-shadow border border-3 ">
 
+                    <object class="fraktal  border-3 border border-bottom-2 border-left-0 border-right-0 border-top-0 "
+                        overflow-y="hidden" , height="600" , type="text/html"
+                        data="https://rest-api-mural.herokuapp.com/">
 
-                    <object object class="fraktal" overflow-y="hidden" , height="650" type="text/html"
-                        data="https://rest-api-mural.herokuapp.com">
                     </object>
 
                     <div class="card-body">
@@ -232,12 +279,15 @@
 
 
                         <div>
+
                             <div class="d-flex justify-content-end">
                                 <a href="https://rest-api-mural.herokuapp.com/" target="_blank"> <button type="button"
-                                        class="btn btn-sm btn-outline-success">Ver Projeto</button> </a>
-                                <button type="button" class="btn btn-sm btn-outline-primary">Ver Código</button>
+                                        class="btn" id="btn-projekt">Projekt</button> </a>
+                                <a href="https://github.com/brfranzon/restApi_Mural" target="_blank">
+                                    <button type="button" class="btn" id="btn-code">Code</button></a>
 
                             </div>
+
 
                         </div>
 
@@ -252,37 +302,56 @@
             <!--</div>-->
             <section class="text-center" id="sobre-mim">
                 <div class="container">
-                    <h2>Sobre mim</h2>
-                    <p class="lead paragrafoBrancos">Olá meu nome é John e estou no mercado de games a mais de 4 anos,
-                        tendo
-                        desenvolvido projetos com empresas como Sony, Unreal Engine, Cry Engine entre diversas outras.
-                        Sou
-                        apaixado por games games e desenvolvimento, e gosto de compartilhar meu conhecimento sempre que
-                        possível
-                        com meus colegas de trabalho</p>
+                    <h2>Über mich</h2>
+                    <p id="mich">Während meiner ersten Berufserfahrung musste ich neue Themen sehr
+                        schnell lernen, mich dabei sehr gut organisieren und meine Aufgaben zielorientiert planen, damit
+                        das Team die Beratung und die Unterstutzung von Projekten bei Kunden umsetzen und ausliefern
+                        könnte.
+
+                        Darüber hinaus Kompetenz, Engagement, bescheiden sein, Ehrlichkeit, Begeisterung und
+                        Entschlossenheit sind selbstverständlich nicht nur Worte, sondern auch Eingenschaften, die mir
+                        sehr wichtig sind und die ich von Kollegen erwarte und auch anbiete.</p>
                 </div>
-                <a href="./lebenslauf_franzon.pdf" target="_blank"> Lebenslauf</a>
+                <div class="mt-5 p-4">
+                    <a href="./lebenslauf_franzon.pdf" target="_blank"
+                        class="stretched-link btn btn-white text-dark border-dark  mr-2">
+                        Lebenslauf</a>
+                    <a href="./lebenslauf_franzon.pdf" target="_blank"
+                        class="stretched-link btn btn-white text-dark border-dark mr-2">
+                        Arbeitszeugnis</a>
+                    <a href="./lebenslauf_franzon.pdf" target="_blank"
+                        class="stretched-link btn btn-white text-dark border-dark mr-2">
+                        Anschreiben</a>
+                    <a href="./lebenslauf_franzon.pdf" target="_blank"
+                        class="stretched-link btn btn-white text-dark border-dark">
+                        Zeugnisse</a>
+                </div>
             </section>
 
 
             <section Id="contato">
                 <div>
                     <div class="container-fluid">
-                        <h3 style="padding-top:90px;" class="text-center titulosBrancos">Disponível para oportunidades
+                        <h3 style="padding-top:90px;" class="text-center titulosBrancos">E-Mail.:
                         </h3>
-                        <h4 style="padding-bottom:90px;margin-bottom: 0px;color:white;" class="text-center"><a
-                                href="mailto:jdsjhonatan@hotmail.com">seumail@hotmail.com👈</a></h4>
+                        <h4 class="text-center"><a href="mailto:brfranzon@gmail.com"
+                                style="text-decoration: none;">brfranzon@gmail.com 👈</a></h4>
 
-
+                        <h3 class="text-center titulosBrancos">Mobil.:
+                        </h3>
+                        <h4 class="text-center"><a href="/" style="text-decoration: none;">+49 152 5542 0530
+                                &#128222;</a>
+                        </h4>
                     </div>
                 </div>
             </section>
 
-            <footer class="text-center" style="background-color:#2c3e50;padding:0px; margin:0px">
+            <!-- <footer class="text-center" style="background-color:#2c3e50;padding:0px;">
                 <p style="margin:0px;padding-top:15px;padding-bottom:15px;color:white !important">Copyright 2020
                     DevAprender®
                 </p>
             </footer>
+            -->
         </div>
 
     </div>

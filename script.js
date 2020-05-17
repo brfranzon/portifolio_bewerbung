@@ -5,7 +5,7 @@ var anime = setInterval(game, 1000);
 //window.addEventListener("load", inicia);
 
 $(window).one('scroll', () => {
-   // myFunction();
+    // myFunction();
 });
 
 
@@ -53,5 +53,20 @@ function game() {
 }
 
 
+/** mouseover */
+pic.addEventListener("mouseover", ()=>{
+    let name = document.getElementById("name");
+    name.style.color = "yellow";
+    name.style.transitionDuration = "2s";
 
+});
+
+pic.addEventListener("mouseout", ()=>{
+    let name = document.getElementById("name");
+    name.style.color = "black";
+    name.style.transitionDuration = "2s";
+
+});
+
+   
 
