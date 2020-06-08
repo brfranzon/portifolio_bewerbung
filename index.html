@@ -59,14 +59,6 @@
 
         #nav {
             height: 200px;
-            background-image:
-                repeating-linear-gradient(45deg,
-                    rgb(202, 202, 202),
-                    rgb(202, 202, 202) 10px,
-                    rgb(233, 2, 233) 30px,
-                    rgb(233, 2, 233) 30px
-                    /* determines size */
-                );
         }
 
         .columns-bg {
@@ -74,8 +66,8 @@
             width: 90%;
             background-image:
                 repeating-radial-gradient(circle at 0 0,
-                    rgb(233, 233, 233),
-                    rgb(224, 224, 224) 1000px);
+                    rgb(240, 240, 240),
+                    rgb(255, 255, 255) 1000px);
         }
 
 
@@ -96,13 +88,15 @@
             font-family: 'Julius Sans One', sans-serif;
             font-weight: 900;
             font-size: 32pt;
+            text-decoration: line-through;
+            text-decoration-color: rgb(255, 0, 255);
+
+
         }
     </style>
 </head>
 
-<body>
-
-
+<body onload="rotation()">
 
     <header class="bannersticky-top ignore-header  bg-white sticky-top" style="height: 200px; z-index:1;">
     </header>
@@ -113,7 +107,6 @@
 
         <a class="navbar-brand"> <span id="name"> Bruno Franzon </span></a>
 
-
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu"
             aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon navbar-toggler-focus"></span>
@@ -123,14 +116,14 @@
         <div class="collapse navbar-collapse" id="menu">
             <ul class="navbar-nav">
                 <li id="projekt">
-                    <a href="#projetos" class="nav-link text-white font-weight-bold "> Projekte</a>
+                    <a href="#projetos" class="nav-link text-dark font-weight-0 "> Projekte</a>
                 </li>
                 <li id="uebermich">
-                    <a href="#sobre-mim" class="nav-link text-white font-weight-bold">Über mich</a>
+                    <a href="#sobre-mim" class="nav-link text-dark font-weight-0">Über mich</a>
                 </li>
                 <li id="kontakt">
-                    <a href="#contato" class="nav-link text-white font-weight-bold">Kontakt</a>
-                    </li>
+                    <a href="#contato" class="nav-link text-dark font-weight-0">Kontakt</a>
+                </li>
             </ul>
         </div>
 
@@ -144,9 +137,9 @@
         <div class="container">
             <img id="pic" src="/images/eu_pic.jpg" class="foto-perfil" alt="Responsive image">
 
-            <h1 style="color:rebeccapurple; text-transform: uppercase;">Bruno Franzon</h1>
+            <h1 style="color:rebeccapurple; text-transform: uppercase;">BF</h1>
 
-            <p class="lead" style="color:rgb(150, 142, 143) !important;">Software Developer - Content Creator - XXXXX
+            <p class="lead" style="color:rgb(150, 142, 143) !important;"> Berater und Software Developer
             </p>
 
             <!--     <a href="#"><i style="color:white" class="fab fa-github"></i></a> -->
@@ -170,52 +163,16 @@
             <h1 class="text-center text-warning mb-5"> Technische Projekte</h1>
 
 
-            <!--  <div class="row"> -->
-            <!-- Fraktal-->
-            <div class="mx-auto col-md-8 mb-5">
-
-                <h3 class="text-dark">Fraktal</h3>
-
-                <div class="card mb-4 box-shadow border border-3 ">
-
-                    <object class="fraktal  border-3 border border-bottom-2 border-left-0 border-right-0 border-top-0 "
-                        overflow-y="hidden" , height="600" , type="text/html" data="http://franzon-fraktal.rf.gd">
-
-                    </object>
-
-
-                    <div class="card-body">
-                        <p class="card-text"> Javascript Anwendung zur Visualisierung eines
-                            Fraktalbaums. Technische verwendete Tolls:
-                        </p>
-                        <ul class="d-flex justify-content-around mb-5">
-                            <li>Javascript</li>
-                            <li>CSS</li>
-                            <li>HTML</li>
-                        </ul>
-
-                        <div>
-                            <div class="d-flex justify-content-end">
-                                <a href="franzon-fraktal.rf.gd" target="_blank"> <button type="button" class="btn"
-                                        id="btn-projekt">Projekt</button> </a>
-                                <a href="https://github.com/brfranzon/fractalv2" target="_blank">
-                                    <button type="button" class="btn" id="btn-code">Code</button></a>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
 
 
             <!-- Corona-->
             <div class="mx-auto col-md-8 mb-5">
 
-                <h3 class="text-dark">Corona Virus App</h3>
+
+                <h3 class="txt">Corona Virus App
+                    <img id="globus" src="Globen/14.gif" width="52" height="52">
+
+                </h3>
                 <div class="card mb-4 box-shadow border border-3 ">
 
                     <object class="fraktal  border-3 border border-bottom-2 border-left-0 border-right-0 border-top-0 "
@@ -228,7 +185,7 @@
                             Tolls:
 
                         </p>
-                        <ul class="d-flex justify-content-around mb-5">
+                        <ul class="items" class="d-flex justify-content-around mb-5">
                             <li>Javascript</li>
                             <li>Rest API's</li>
                             <li>CSS</li>
@@ -238,7 +195,7 @@
 
                         <div>
                             <div class="d-flex justify-content-end">
-                                <a href="http://franzon-corona-app.gd/?i=1" target="_blank"> <button type="button"
+                                <a href="http://franzon-corona-app.rf.gd/" target="_blank"> <button type="button"
                                         class="btn" id="btn-projekt">Projekt</button> </a>
                                 <a href="https://github.com/brfranzon/coronaApp" target="_blank">
                                     <button type="button" class="btn" id="btn-code">Code</button></a>
@@ -254,7 +211,133 @@
             </div>
 
 
-            <!-- REST API-->
+            <!--Reak time Voting-->
+            <div class="mx-auto col-md-8 mb-5">
+
+                <h3 class="txt">Real time Wahl</h3>
+
+                <div class="card mb-4 box-shadow border border-3 ">
+
+                    <object class="fraktal  border-3 border border-bottom-2 border-left-0 border-right-0 border-top-0 "
+                        overflow-y="hidden" , height="600" , type="text/html"
+                        data="https://franzon-voterealtime.herokuapp.com/">
+
+                    </object>
+
+
+                    <div class="card-body">
+                        <p class="card-text"> Real time Wahl Anwendung. Technische verwendete Tolls:
+                        </p>
+                        <ul class="items" class="d-flex justify-content-around mb-5">
+                            <li>Pusher API</li>
+                            <li>Javascript</li>
+                            <li>MongoDB</li>
+                        </ul>
+
+                        <div>
+                            <div class="d-flex justify-content-end">
+                                <a href="https://franzon-voterealtime.herokuapp.com/" target="_blank"> <button
+                                        type="button" class="btn" id="btn-projekt">Projekt</button> </a>
+                                <a href="https://github.com/brfranzon/-PusherRealTimeApp-" target="_blank">
+                                    <button type="button" class="btn" id="btn-code">Code</button></a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Fraktal-->
+            <div class="mx-auto col-md-8 mb-5">
+
+                <h3 class="txt">Fraktal</h3>
+
+                <div class="card mb-4 box-shadow border border-3 ">
+
+                    <object class="fraktal  border-3 border border-bottom-2 border-left-0 border-right-0 border-top-0 "
+                        overflow-y="hidden" , height="600" , type="text/html" data="http://franzon-fraktal.rf.gd">
+
+                    </object>
+
+
+                    <div class="card-body">
+                        <p class="card-text"> Javascript Anwendung zur Visualisierung eines
+                            Fraktalbaums. Technische verwendete Tolls:
+                        </p>
+                        <ul class="items" class="d-flex justify-content-around mb-5">
+                            <li>Javascript</li>
+                            <li>CSS</li>
+                            <li>HTML</li>
+                        </ul>
+
+                        <div>
+                            <div class="d-flex justify-content-end">
+                                <a href="http://franzon-fraktal.rf.gd" target="_blank"> <button type="button"
+                                        class="btn" id="btn-projekt">Projekt</button> </a>
+                                <a href="https://github.com/brfranzon/fractalv2" target="_blank">
+                                    <button type="button" class="btn" id="btn-code">Code</button></a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- RESTFULL API: e-Commerce-->
+            <div class="mx-auto col-md-8 mb-5">
+
+                <h3 class="txt">Restfull API</h3>
+                <div class="card mb-4 box-shadow border border-3 ">
+
+                    <object class="fraktal  border-3 border border-bottom-2 border-left-0 border-right-0 border-top-0 "
+                        overflow-y="hidden" , height="600" , type="text/html"
+                        data="https://franzon-e-commerce.herokuapp.com/admin/products">
+
+                    </object>
+
+                    <div class="card-body">
+                        <p class="card-text"> E-Commerce Admin-Seite Anwendung erstellt in Kombination mit
+                        </p>
+                        <ul class="items" class="d-flex justify-content-around mb-5">
+                            <li>MongoDB</li>
+                            <li>Express</li>
+                            <li>Node.js</li>
+                            <li>Bootstrap</li>
+                            <li>ejs</li>
+                        </ul>
+
+
+                        <div>
+
+                            <div class="d-flex justify-content-end">
+                                <a href="https://franzon-e-commerce.herokuapp.com/admin/products" target="_blank">
+                                    <button type="button" class="btn" id="btn-projekt">Projekt</button> </a>
+                                <a href="https://github.com/brfranzon/e-commerce" target="_blank">
+                                    <button type="button" class="btn" id="btn-code">Code</button></a>
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!-- REST API
             <div class="mx-auto col-md-8 mb-5">
 
                 <h3 class="text-dark">Restfull API</h3>
@@ -295,36 +378,39 @@
                     </div>
                 </div>
             </div>
-
+-->
             <!-- GLASS-->
             <!--Visualization-->
 
             <!--</div>-->
             <section class="text-center" id="sobre-mim">
-                <div class="container">
+                <div class="container mt-5">
                     <h2>Über mich</h2>
-                    <p id="mich">Während meiner ersten Berufserfahrung musste ich neue Themen sehr
-                        schnell lernen, mich dabei sehr gut organisieren und meine Aufgaben zielorientiert planen, damit
-                        das Team die Beratung und die Unterstutzung von Projekten bei Kunden umsetzen und ausliefern
-                        könnte.
+                    <p id="mich">
 
-                        Darüber hinaus Kompetenz, Engagement, bescheiden sein, Ehrlichkeit, Begeisterung und
-                        Entschlossenheit sind selbstverständlich nicht nur Worte, sondern auch Eingenschaften, die mir
-                        sehr wichtig sind und die ich von Kollegen erwarte und auch anbiete.</p>
+                        Ich freue mich darauf, meine Kenntnisse und Fertigkeiten bei Ihnen einzusetzen und Entwicklung
+                        von individuellen Softwarelösungen mit Hilfe von Web-Technologien zu schaffen. Im Umgang mit
+                        Javascript, Node.js, jQuery, CSS, HTML5, Bootstrap, EJS, und mit der Entwicklung eines
+                        RESTful-Backends mit MongoDB/Mongoose habe ich bereits Erfahrung gesammelt.
+
+                        Durch regelmäßige Fortbildung bin ich in der Lage meinen langlebige Webseiten auf Basis der
+                        neuesten Webtechnologien zu erstellen. Dazu gehören Frontend-Technologien wie HTML5 oder CSS5,
+                        Javascript-Bibliotheken wie jQuery und Techniken wie Responsive Webdesign.
+
+
+                    </p>
                 </div>
                 <div class="mt-5 p-4">
-                    <a href="./lebenslauf_franzon.pdf" target="_blank"
+                    <a href="./Lebenslauf_Franzon.pdf" target="_blank"
                         class="stretched-link btn btn-white text-dark border-dark  mr-2">
                         Lebenslauf</a>
-                    <a href="./lebenslauf_franzon.pdf" target="_blank"
+                    <a href="./Arbeitszeugnis_Franzon.pdf" target="_blank"
                         class="stretched-link btn btn-white text-dark border-dark mr-2">
                         Arbeitszeugnis</a>
-                    <a href="./lebenslauf_franzon.pdf" target="_blank"
-                        class="stretched-link btn btn-white text-dark border-dark mr-2">
-                        Anschreiben</a>
-                    <a href="./lebenslauf_franzon.pdf" target="_blank"
+                    <a href="./Zeugnisse_Franzon.pdf" target="_blank"
                         class="stretched-link btn btn-white text-dark border-dark">
-                        Zeugnisse</a>
+                        Zeugnisse
+                    </a>
                 </div>
             </section>
 

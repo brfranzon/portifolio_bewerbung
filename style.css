@@ -26,17 +26,17 @@
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background: yellow;
+    background: rgb(207, 207, 0);
   }
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: green;
+    background: rgb(0, 0, 0);
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: red;
+
   } 
 
 #jogador{
@@ -87,10 +87,24 @@ p#mich{
   margin-left: 5px;
   }
 
+
+.txt{
+    font-size: 40pt;
+    color: rgb(136, 136, 136);
+    font-weight: 100;
+  }
+
 @media (min-width: 992px){
-  .navbar li {
+  .navbar li{
       margin-left : 6em;
       font-size: 30pt;
       font-family: 'Titillium Web', sans-serif;
   }
+}
+
+
+@media (max-width: 992px){
+ .items{
+      font-size: 5pt;
+ }
 }
